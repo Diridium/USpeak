@@ -1,0 +1,158 @@
+header{
+    width: 100%;
+    height:110px;
+    display:flex;
+    flex-direction: row;
+    align-content: space-between;
+    color: black;
+    margin-bottom: 45px;
+}
+
+footer{
+    width: auto;
+    height:50px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Trebuchet MS";
+
+}
+
+body{
+    /* color: white; */
+    font-family: "Trebuchet MS";
+    background-image: linear-gradient(to top, skyblue, whitesmoke );
+}
+
+
+#form{
+    flex-direction: row;
+    align-content: space-between;
+    text-align: right;
+    margin-right: 50px;
+    display: inline-flex;
+    text-align: left;
+}
+
+#logo{
+    padding: auto;
+}
+
+
+/*--------------------------------------------------------------*/
+
+.right{
+    flex-direction: row;
+    display: inline-flex;
+}
+
+.rightnav{
+    position: absolute;
+    right: 10%;
+}
+
+.rightnav form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.blue{
+    background-color: skyblue;
+}
+
+.center{
+    text-align: center;
+    text-decoration: overline;
+}
+
+.greytext{
+    color: black;
+}
+
+.img_logo{
+    margin: 10px;
+}
+
+#sign_in { 
+    display:inline-block;
+
+}
+
+.button {     
+    background-color: dimgrey; 
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.bar{
+    position: sticky;
+    top : 0;
+    margin-top : 0%;
+    width:100%;
+}
+
+li{
+    padding: 0.3em;
+    list-style: none; 
+}
+
+.anim span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.anim span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.anim:hover span {
+    padding-right: 25px;
+}
+
+.anim:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.btn-log {
+    height: 35px;
+    width: 100px;
+    border-style: none;
+    background-color: rgb(104, 104, 104);
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.form-lab-in {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.input3{
+    width: 200px;
+    height: 20px;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid grey;
+
+}

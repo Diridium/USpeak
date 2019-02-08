@@ -1,0 +1,44 @@
+body{
+    font-family: "Trebuchet MS";
+    margin: 0px; /*ne pas toucher merci*/
+
+}
+
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    height:100px;
+    /* margin-bottom: 10px; */
+    background-color: #1293ff;
+    /* margin: 0px; */
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+
+header div a:hover {
+    border-bottom: 4px white solid ;
+}
+
+header div a {
+    border-bottom: none;
+}
+
+.logo{
+    margin: 5px;
+}
+
+.redtext{
+    color: #ff1a1a;
+}
+
+.redtext a{
+    color: #ff1a1a;
+}
+

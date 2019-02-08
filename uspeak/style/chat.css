@@ -1,0 +1,87 @@
+.date {
+    font-size: 10px;
+    margin-left: 90%;
+    padding-bottom: 5px;
+}
+
+.pseudo{
+    font-size: 15px;
+    margin-top: 2px;
+    margin-left: 5px;
+
+}
+.mess {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.form-mess {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.conversation {
+    border: 1px rgb(133, 133, 133) solid;
+    background-color: rgb(207, 207, 207);
+    border-radius: 10px;
+    height: 100%;
+    margin: 5px 5px;
+    width: 80%;
+
+}
+
+.conv-own {
+    border: 1px rgb(133, 133, 133) solid;
+    background-color: #1293ff;
+    border-radius: 10px;
+    height: 100%;
+    margin: 5px 5px;
+    width: 80%;
+    margin-left: 19.5%;
+}
+
+.fil {
+    border: 2px solid rgb(133, 133, 133);
+    height: auto;
+}
+
+
+.mess-content {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+
+.send {
+    padding: auto;
+    border-style: none;
+}
+
+.send-i {
+    height: 25px;
+    width: auto;
+    
+}
+
+.form-mess input {
+    height: 50px;
+    width: 95%;
+    margin-bottom: 7px;
+    font-size: 20px;
+}
+
+.form-in {
+    text-align: center;
+}
+
+.input{
+    width: 250px;
+    height: 30px;
+    font-family: "Trebuchet MS";
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid grey;
+
+}

@@ -51,13 +51,15 @@ include "../connect.php";
         <h3>Nouveau pseudo :</h3>
         <input type="text" name="newName" placeholder="Nouveau pseudo" class="input" required><br>
 
-        <h3>Votre mot de passe :</h3>
-        <input type="text" name="verifName" placeholder="Votre mot de passe" class="input" required><br>
+        <h3>Confirmer pseudo</h3>
+        <input type="text" name="verifName" placeholder="Confirmer votre pseudo" class="input" required><br><br>
 
-        <h3>Confirmez :</h3>
-        <input type="text" name="mdp" placeholder="Confirmer votre mot de passe" class="input" required><br><br><br>
+        <h3>Votre mot de passe :</h3>
+        <input type="password" name="mdp" placeholder="Votre mot de passe" class="input" required><br><br><br>
 
         <button class ="buttonsmall" type="submit"><span><a href="#">Confirmer</a></span></button>
+
+		<!--Ca marche plus ??!-->
     
     
     </form>

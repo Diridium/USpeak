@@ -50,7 +50,20 @@ include "../connect.php";
 			<br><img class="pdp-user" src="/pdp_users/<?php echo $donnees['PDP']; ?>" alt="photo de profil">
 
 			<div class="info-user">
-					<?php echo '<p class="pseudo">'.$donnees['PSEUDO'].'</p>'.'<p>'.$donnees['ROLE'].'</p>'.'<p>'.$donnees['DATE_REGISTER'].'</p>'; ?>
+					<?php
+					 $date = date_parse($donnees['DATE_REGISTER']);
+					 $jour = $date['day'];
+					 $mois = $date['month'];
+					 $annee = $date['year'];
+					 $hours = $date['hour'];
+					 $minute = $date['minute'];
+					 if ($minute < 10) {
+						 $minute = '0'.$minute;
+					 }
+					 if ($mois < 10) {
+						 $mois = '0'.$mois;
+					 }
+					echo '<p class="pseudo">'.$donnees['PSEUDO'].'</p>'.'<p>'.'Role : '.$donnees['ROLE'].'</p>'.'<p>Enregistré le : '.$jour.'/'.$mois.'/'.$annee.'</p>'; ?>
 			</div>
     
 		</div>
@@ -59,7 +72,7 @@ include "../connect.php";
 		<div style="flex-grow: 5">
 			<div class="config">
 				<br><br>
-				<h3 style="text-decoration:underline;">Parametres de compte</h3><br><br>
+				<h3 style="text-decoration:underline;">Paramètres de compte</h3><br><br>
 				<a href="rename.php">Changer de pseudo</a><br>
 				<a href="changepdp.php">Changer sa photo de profil</a><br>
 				<a href="theme.php">Changer le thème</a><br>

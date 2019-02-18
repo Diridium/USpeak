@@ -23,7 +23,7 @@ header a{
 
 
 header div a:hover {
-    border-bottom: 4px white solid ;
+    border-bottom: 1.5px white solid ;
 }
 
 header div a {
@@ -35,10 +35,12 @@ header div a {
 }
 
 .redtext{
-    color: #ff1a1a;
+    /* color: #ff1a1a; */
+    color:white;
 }
 
 .redtext a{
-    color: #ff1a1a;
+    /* color: #ff1a1a; */
+    color:white;
 }
 

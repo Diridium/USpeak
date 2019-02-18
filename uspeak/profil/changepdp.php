@@ -45,16 +45,18 @@ include "../connect.php";
 
             <button class ="buttonsmall" type="submit"><span><a href="index.php">Retour</a></span></button>
 
-			<h4 class="center">Choisissez une nouvelle image de profil :</h4>
             <div class="flex-container boxtheme">
                 <div style="flex-grow: 7">
-                <form action="upload.php" method="POST" enctype="multipart/form-data">
-					<input type="file" name="imageUpload">
-					<input type="submit" value="Upload Image" name="submit">
+                <br><br>
+					<form action="#">
+					Choisissez une nouvelle image de profil : <br><br>
+					<input type="file" name="myFile"><br><br>
+					<button class ="buttonsmall" type="submit" style="width:100px;	"><span><a href="#">Confirmer</a></span></button>
+					</form>
+                <br>
                 </div>
             </div>
 			<br>
-            <button class ="buttonsmallcenter" type="submit"><span><a href="#">Confirmer</a></span></button>
 			</form>
         </div>
         

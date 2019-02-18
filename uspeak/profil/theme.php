@@ -44,18 +44,19 @@ include "../connect.php";
             <h4 class="title center">Changer de theme</h4>
 
             <button class ="buttonsmall" type="submit"><span><a href="index.php">Retour</a></span></button>
-
-            <h4 class="center">Choisissez un nouveau theme :</h4>
+            
             <div class="flex-container boxtheme">
-                <div style="flex-grow: 7">
-                <br><br>
-                <h4>Mettre du php ici</h4>
-                <br>
+            <div style="flex-grow: 7">  
+                    <br><br>
+                        <form action="#">
+                        Choisissez un nouveau theme: <br><br>
+                        <input type="file" name="myFile"><br><br>
+                        <button class ="buttonsmall" type="submit" style="width:100px;	"><span><a href="#">Confirmer</a></span></button>
+                        </form>
+                    <br>
                 </div>
             </div>
             <br>
-            <button class ="buttonsmallcenter" type="submit"><span><a href="#">Confirmer</a></span></button>
-
         </div>
             
 

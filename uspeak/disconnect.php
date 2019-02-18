@@ -6,12 +6,11 @@ session_destroy();
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Déconnection...</title>
+    <title>Deconnexion...</title>
     <meta http-equiv="refresh" content="3;URL=/chat/">
     <link rel="stylesheet" type="text/css" href="/style/template.css">
     <link rel="icon" type="image/png" href="images/favicon.ico">
 </head>
-
 
     <body>
         <header>

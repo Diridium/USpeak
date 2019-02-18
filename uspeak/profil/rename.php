@@ -46,16 +46,16 @@ include "../connect.php";
     <button class ="buttonsmall" type="submit"><span><a href="index.php">Retour</a></span></button>
 
 
-    <form action="#">
+    <form action="rename_user.php" method="POST">
 
         <h3>Nouveau pseudo :</h3>
-        <input type="text" name="" value="" placeholder="Nouveau pseudo" class="input" required><br>
+        <input type="text" name="newName" placeholder="Nouveau pseudo" class="input" required><br>
 
         <h3>Votre mot de passe :</h3>
-        <input type="text" name="" value="" placeholder="Votre mot de passe" class="input" required><br>
+        <input type="text" name="verifName" placeholder="Votre mot de passe" class="input" required><br>
 
         <h3>Confirmez :</h3>
-        <input type="text" name="" value="" placeholder="Confirmer votre mot de passe" class="input" required><br><br><br>
+        <input type="text" name="mdp" placeholder="Confirmer votre mot de passe" class="input" required><br><br><br>
 
         <button class ="buttonsmall" type="submit"><span><a href="#">Confirmer</a></span></button>
     

@@ -63,7 +63,7 @@ include "../connect.php";
 					 if ($mois < 10) {
 						 $mois = '0'.$mois;
 					 }
-					echo '<p class="pseudo">'.$donnees['PSEUDO'].'</p>'.'<p>'.'Role : '.$donnees['ROLE'].'</p>'.'<p>Enregistré le : '.$jour.'/'.$mois.'/'.$annee.'</p>'; ?>
+					echo '<p style="font-size:25px;">'.$donnees['PSEUDO'].'</p>'.'<p>'.'<u>Role :</u> '.$donnees['ROLE'].'</p>'.'<p><u>Enregistré le :</u> '.$jour.'/'.$mois.'/'.$annee.'</p>'; ?>
 			</div>
     
 		</div>

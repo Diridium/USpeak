@@ -48,14 +48,14 @@ include "../connect.php";
 			<h4 class="center">Choisissez une nouvelle image de profil :</h4>
             <div class="flex-container boxtheme">
                 <div style="flex-grow: 7">
-                <br><br>
-                <h4>Mettre du php ici</h4>
-                <br>
+                <form action="upload.php" method="POST" enctype="multipart/form-data">
+					<input type="file" name="imageUpload">
+					<input type="submit" value="Upload Image" name="submit">
                 </div>
             </div>
 			<br>
             <button class ="buttonsmallcenter" type="submit"><span><a href="#">Confirmer</a></span></button>
-
+			</form>
         </div>
         
 

@@ -11,7 +11,7 @@ if (isset($_SESSION['login'])) {header('Location: /chat/');}
         <link rel="stylesheet" type="text/css" href="/style/style.css">
         <link rel="icon" type="image/png" href="/images/favicon.ico">
     </head>
-
+    
     <body>
         <header>
             <img src="/images/logo.png" height="100px" alt="img_png" class="logo" href="#">

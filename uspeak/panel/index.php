@@ -2,6 +2,12 @@
 session_start();
 if (!isset($_SESSION['login'])) {header('Location: /');}
 include "../connect.php";
+$idUser = $_SESSION['login'];
+$verifRole = $connect->query("SELECT ROLE FROM user WHERE ID = $idUser");
+$verifRole = $verifRole->fetch();
+if ($verifRole != "Administrateur" || $verifRole != "Modérateur") {
+	header("Location: refused.php");
+}
 ?>
 <!DOCTYPE html>
 <html>

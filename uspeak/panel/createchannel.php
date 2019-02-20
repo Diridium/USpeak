@@ -50,16 +50,13 @@ include "../connect.php";
 		<div class="content center">
             <button class ="buttonsmall" type="submit"><span><a href="channelconfig.php">Retour</a></span></button>
             <form>
-			Nom du channel<br><br><input placeholder="Nom du channel" class="input" 
-			style="width:735px; height:20px;border-radius:10px;border:1px grey solid;"><br><br>
+			Nom du channel<br><br>
+			<input placeholder="Nom du channel" class="input" style="width:735px; height:20px;border-radius:10px;border:1px grey solid;"><br><br>
 			Description du channel<br><br><textarea placeholder ="Maximum 2000 caracteres" rows="15" cols="100" class="inputbig"></textarea><br><br>
-
             <button class ="buttonsmall" type="submit"><span><a href="index.php">Créer le channel</a></span></button>
             </form>
 			
 		</div>
-			
-
 			
 	</body>
 </html>

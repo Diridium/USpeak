@@ -43,7 +43,7 @@ include "../connect.php";
 ?>
 
 
-	<h4 class="title center">Customiser son profil</h4>
+	<h4 class="title center">Profil de <?php echo $donnees['PSEUDO']     ?></h4>
 
 	<div class="flex-container">
 		<div style="flex-grow: 5;">
@@ -76,10 +76,11 @@ include "../connect.php";
 		<div style="flex-grow: 5">
 			<div class="config">
 				<br><br>
-				<h3 style="text-decoration:underline;">Paramètres de compte</h3><br><br>
-				<a href="rename.php">Changer de pseudo</a><br>
-				<a href="changepdp.php">Changer sa photo de profil</a><br>
-				<a href="theme.php">Changer le thème</a><br>
+				<h3 style="text-decoration:underline;">Options</h3><br><br>
+				<a href="#">Ajouter en ami</a></a><br>
+                <a href="#">Bloquer</a></a><br>
+   
+   
 			</div>
 		</div>
 

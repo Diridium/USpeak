@@ -1,0 +1,3 @@
+Affiche une page avec le profil quand on clique sur le pseudo
+Afficher une barre laterale dans la page "chat"
+Redirige vers une page pour choisir le channel apres la connexion/Inscription

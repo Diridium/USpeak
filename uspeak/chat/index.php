@@ -49,7 +49,7 @@ include "../connect.php";
 			if ($count == 0) {echo "<div class='fil'><div class='conversation'><div class='date-pseudo'></div><div class='mess'>Pas de Message, Soyez le 1er à parler !</div></div></div>";}
 			else {
 		
-			$reponse = $connect->query("SELECT u.PSEUDO, m.MESSAGES, m.DATE_MESSAGE FROM minichat m JOIN user u ON u.ID = m.ID_USER ORDER BY m.DATE_MESSAGE LIMIT $offset, 10");
+			$reponse = $connect->query("SELECT u.PSEUDO, m.MESSAGES, m.DATE_MESSAGE, u.PDP FROM minichat m JOIN user u ON u.ID = m.ID_USER ORDER BY m.DATE_MESSAGE LIMIT $offset, 10");
 			?>
 			
 			<div class="fil">
@@ -60,12 +60,22 @@ include "../connect.php";
 					echo '<div class="conv-own">';
 				} else {echo '<div class="conversation">';}
 				?>
+
+					<!--Pseudo-->
 					<div class="pseudo">
+					
+					<img class="pdp-user" src="/pdp_users/<?php echo $donnees["PDP"]; ?>">
+					
+
 					<?php echo "Par <b>".($donnees['PSEUDO'])."</b>" ?>
 					</div>
+
+					<!--Message-->
 					<div class="mess">
 						<?php echo strip_tags($donnees['MESSAGES']); ?>
 					</div>
+
+					<!--Date message-->
 					<div class="date">
 					<?php $date = date_parse($donnees['DATE_MESSAGE']);
 						$jour = $date['day'];
@@ -82,6 +92,7 @@ include "../connect.php";
 						echo ' à '.$hours.':'.$minute." le ".$jour.'/'.$mois; ?>
 					
 					</div>
+
 				</div>
 				<?php } $reponse->closeCursor(); }
 				?>

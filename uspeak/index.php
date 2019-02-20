@@ -10,6 +10,7 @@ if (isset($_SESSION['login'])) {header('Location: /chat/');}
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="/style/style.css">
         <link rel="icon" type="image/png" href="/images/favicon.ico">
+
     </head>
     
     <body>
@@ -39,7 +40,7 @@ if (isset($_SESSION['login'])) {header('Location: /chat/');}
     <br><br><br>
     <div id="form">
         <div id="avion-terre">
-            <img src="/images/avion-terre.png" width="100%" class="img_logo" alt="img_png">
+            <img src="/images/avion-terre.png" width="90%" class="img_logo" alt="img_png">
         </div>
 
         <div id="sign_in" class="greytext"></div>
@@ -48,8 +49,8 @@ if (isset($_SESSION['login'])) {header('Location: /chat/');}
                 <br>
                 <div class="form-lab-in">
                     <div class="labels">
-                        <label for="nom" >Nom</label><br>
-                        <label for="prenom">Prénom</label><br>
+                        <!-- <label for="nom" >Nom</label><br>
+                        <label for="prenom">Prénom</label><br> -->
                         <label for="pseudo">Pseudo</label><br>
                         <label for="born">Date de naissance</label><br>
                         <label for="mail">Adresse mail</label><br>
@@ -60,8 +61,8 @@ if (isset($_SESSION['login'])) {header('Location: /chat/');}
 
                     <div class="inputs">
                         
-                        <input type="text" id="nom" name="nom" class="right input3" placeholder="Nom" required><br>
-                        <input type="text" id="prenom" name="prenom" class="right input3" placeholder="Prénom" required><br>
+                        <!-- <input type="text" id="nom" name="nom" class="right input3" placeholder="Nom" required><br>
+                        <input type="text" id="prenom" name="prenom" class="right input3" placeholder="Prénom" required><br> -->
                         <input type="text" id="pseudo" name="pseudo" class="right input3" placeholder="Pseudo" required><br>
                         <input type="date" id="born" name="born" class="right input3" required><br>
                         <input type="email" id="mail" name="mail" class="right input3" placeholder="mail@example.com" class ="input3" required><br>
@@ -85,7 +86,7 @@ if (isset($_SESSION['login'])) {header('Location: /chat/');}
                 <!-- <input type="submit" name="Valider" value="Valider" class="button"> -->
         </form>
     </div>
-    </div>
+
 
     <br><br><br>
     

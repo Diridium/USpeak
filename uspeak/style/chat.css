@@ -44,8 +44,8 @@
 }
 
 .fil {
-    border: 2px solid rgb(133, 133, 133);
-    height: auto;
+    border: 1px solid grey;
+    /* height: auto; */
 }
 
 
@@ -83,5 +83,12 @@
     font-size: 16px;
     border-radius: 10px;
     border: 1px solid grey;
+
+}
+
+.pdp-user{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px
 
 }

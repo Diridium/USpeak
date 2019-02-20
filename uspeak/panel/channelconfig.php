@@ -41,17 +41,11 @@ include "../connect.php";
 	</header>	
 
 		<!--contenu-->
-		<div class="content">
 			
-			<h4 class="title center">Gerer les channels :</h4>
+		<h4 class="title center">Gerer les channels :</h4>
 			
-		</div>
-		
-		<div class="content">
-			<button class ="buttonsmall" type="submit"><span><a href="index.php">Retour</a></span></button>
-			
-		</div>
-			
+		<button class ="buttonsmall" type="submit"><span><a href="index.php">Retour</a></span></button>
+				
 		<div class="flex-container">
 			<div style="flex-grow: 7;display:flex;flex-direction:column;"><br>
 				Liste des channels :<br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -70,7 +64,6 @@ include "../connect.php";
 				<button class ="button red">Supprimer le channel</button>
 				<br><br>
 				
-				</form>
 				<br><br>
 			</div>
 				

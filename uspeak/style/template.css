@@ -22,8 +22,17 @@ header a{
 
 
 header div a:hover {
-    border-bottom: 1.5px white solid ;
+    border-bottom: 2px white solid ;
+    animation-name: animhover;
+    animation-duration: 1s;
+    /* animation-delay: 2s; */
 }
+
+/* Animation hover navbar */
+@keyframes animhover {
+    from {border-bottom-color: #1293ff;}
+    to {border-bottom-color: white;}
+  }
 
 header div a {
     border-bottom: none;

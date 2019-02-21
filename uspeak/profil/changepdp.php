@@ -46,14 +46,15 @@ include "../connect.php";
             <button class ="buttonsmall" type="submit"><span><a href="index.php">Retour</a></span></button>
 
             <div class="flex-container boxtheme">
-                <div style="flex-grow: 7">
-                <br><br>
-					<form action="#">
-					Choisissez une nouvelle image de profil : <br><br>
-					<input type="file" name="myFile"><br><br>
-					<button class ="buttonsmall" type="submit" style="width:100px;	"><span><a href="#">Confirmer</a></span></button>
-					</form>
-                <br>
+            <div style="flex-grow: 7">  
+                    <br><br>
+                        <form action="#">
+                        Choisissez un nouveau theme:<br><br><br><br>
+                        <label for="myFile" class="uploadfile">Choisir un fichier</label>
+                        <input id="myFile" style="display:none;" type="file" name="myFile"><br><br><br><br><br><br>
+                        <button class ="buttonsmall" type="submit" style="width:650px;"><span><a href="#">Confirmer</a></span></button>
+                        </form>
+                    <br>
                 </div>
             </div>
 			<br>

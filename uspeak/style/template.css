@@ -25,7 +25,7 @@ header div a:hover {
     border-bottom: 2px white solid ;
     animation-name: animhover;
     animation-duration: 1s;
-    /* animation-delay: 2s; */
+    /* animation-delay: 2s; */ 
 }
 
 /* Animation hover navbar */

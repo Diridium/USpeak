@@ -38,24 +38,24 @@ include "../connect.php";
 		</div>
 	</header>	
 
-
         <div class="content">
             
             <h4 class="title center">Changer de theme</h4>
 
             <button class ="buttonsmall" type="submit"><span><a href="index.php">Retour</a></span></button>
             
-            <div class="flex-container boxtheme">
-            <div style="flex-grow: 7">  
-                    <br><br>
-                        <form action="#">
-                        Choisissez un nouveau theme: <br><br>
-                        <input type="file" name="myFile"><br><br>
-                        <button class ="buttonsmall" type="submit" style="width:100px;	"><span><a href="#">Confirmer</a></span></button>
-                        </form>
-                    <br>
+                <div class="flex-container boxtheme">
+                <div style="flex-grow: 7">  
+                        <br><br>
+                            <form action="#">
+                            Choisissez un nouveau theme:<br><br><br><br>
+                            <label for="myFile" class="uploadfile">Choisir un fichier</label>
+                            <input id="myFile" style="display:none;" type="file" name="myFile"><br><br><br><br><br><br>
+                            <button class ="buttonsmall" type="submit" style="width:650px;"><span><a href="#">Confirmer</a></span></button>
+                            </form>
+                        <br>
+                    </div>
                 </div>
-            </div>
             <br>
         </div>
             

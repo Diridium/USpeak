@@ -18,9 +18,15 @@ include "connect.php";
 
         // Register
         $var = '';
-        if (isset($_POST['nom'])) {$nom = $_POST['nom'];$var = 'reg';}else{$nom = '';} if (isset($_POST['prenom'])) {$prenom = $_POST['prenom'];$var = 'reg';}else{$prenom = '';} if (isset($_POST['mail'])) {$mail = $_POST['mail'];$var = 'reg';}
-        if (isset($_POST['pseudo'])) {$pseudo = $_POST['pseudo'];$var = 'reg';}else{$pseudo = '';} if (isset($_POST['mdp'])) {$mdp = $_POST['mdp'];$var = 'reg';}else{$mdp = '';} if (isset($_POST['verifmdp'])) {$verifmdp = $_POST['verifmdp'];$var = 'reg';}
-        if (isset($_POST['born'])) {$born = $_POST['born'];$var = 'reg';} if (isset($_POST['select'])) {$sexe = $_POST['select'];$var = 'reg';} if (isset($_POST['case'])) {$box = $_POST['case'];$var = 'reg';}else{$box = 'off';}
+        // if (isset($_POST['nom'])) {$nom = $_POST['nom'];$var = 'reg';}else{$nom = '';} 
+        // if (isset($_POST['prenom'])) {$prenom = $_POST['prenom'];$var = 'reg';}else{$prenom = '';} 
+        if (isset($_POST['mail'])) {$mail = $_POST['mail'];$var = 'reg';}
+        if (isset($_POST['pseudo'])) {$pseudo = $_POST['pseudo'];$var = 'reg';}else{$pseudo = '';} 
+        if (isset($_POST['mdp'])) {$mdp = $_POST['mdp'];$var = 'reg';}else{$mdp = '';} 
+        if (isset($_POST['verifmdp'])) {$verifmdp = $_POST['verifmdp'];$var = 'reg';}
+        if (isset($_POST['born'])) {$born = $_POST['born'];$var = 'reg';} 
+        if (isset($_POST['select'])) {$sexe = $_POST['select'];$var = 'reg';} 
+        if (isset($_POST['case'])) {$box = $_POST['case'];$var = 'reg';}else{$box = 'off';}
             
         
         // Log
@@ -38,11 +44,11 @@ include "connect.php";
 <p class="alert">
     <?php
     // Enregistrement !!
-    $n = strlen($nom);
+    // $n = strlen($nom);
     $n1 = strlen($pseudo);
     $n2 = strlen($mdp);
     if ($var == 'reg') {
-        if ($n > 2) {
+        // if ($n > 2) {
             if ($n1 > 2) {
                 if ($n2 > 5) {
                     if ($mdp == $verifmdp) {
@@ -55,7 +61,7 @@ include "connect.php";
                                         $testmail = $connect->query("SELECT PSEUDO FROM user WHERE PSEUDO = '$pseudo'");
                                         $donnees=$testmail->fetch();
                                         if (!$donnees) {
-                                            $insert = $connect->query("INSERT INTO user(NOM, PRENOM, PSEUDO, MAIL, SEXE, MDP, DATE_NAISSANCE) VALUE('$nom', '$prenom', '$pseudo', '$mail', '$sexe', '$mdp', '$born')");
+                                            $insert = $connect->query("INSERT INTO user(PSEUDO, MAIL, SEXE, MDP, DATE_NAISSANCE) VALUE('$pseudo', '$mail', '$sexe', '$mdp', '$born')");
                                             $insert->closeCursor();
                                             echo "Enregistré avec succès !";
                                         } else{echo "Ce pseudo est déjà utilisé !";}} 
@@ -66,8 +72,8 @@ include "connect.php";
                     else{echo "La confimation et le mot de passe ne sont pas identiques !";}}
                 else{echo "Veuillez mettre un mot de passe avec minimum 6 caractères !";}}
             else{echo "Veuillez mettre un pseudo avec minimum 3 caractères !";}}
-        else{echo "Veuillez mettre un nom avec minimum 3 caractères !";}
-        }
+        // else{echo "Veuillez mettre un nom avec minimum 3 caractères !";}
+        //}
 
 
         // Connection !!

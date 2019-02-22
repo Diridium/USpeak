@@ -19,7 +19,7 @@ session_destroy();
 
         <br><br><br><br>
         <div style ="text-align:center;">
-            <h2>Vous êtes déconnecté !</h2><br><br>
+        <h2>Vous êtes déconnecté !<h2><br><br>
         <h3>Vous allez être redirigé dans quelques secondes</h3>
         </div>
     </body>

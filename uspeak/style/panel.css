@@ -51,8 +51,11 @@
     margin: auto;
 
 }
+
+
 .buttonsmall{
     background-color: dimgrey; 
+    text-decoration: none;
     border: none;
     border-radius: 10px;
     color: white;
@@ -65,12 +68,12 @@
     /* margin-left: 50%; */
 }
 
-.button span a {
+.button a {
     text-decoration: none;
     color: white;
 }
 
-.buttonsmall span a {
+.buttonsmall a {
     text-decoration: none;
     color: white;
 }
@@ -88,12 +91,6 @@
     width: 100px;
     margin: 10px;
     text-align: center;
-}
-
-.red{
-
-    background-color: red;
-    color: white;
 }
 
 /* .roundradius{
@@ -126,4 +123,8 @@
     height: 200px;
     width: 735px;
 
+}
+
+.inputbig a{
+    text-decoration: none;
 }

@@ -61,42 +61,19 @@ include "../connect.php";
 			</form>
 
 			<br>
-			<button class="button">Rechercher</button>
+			<button class="buttonsmall">Rechercher</button>
 			<br><br><br>
-
-			<!--Mettre la liste des membres en php ici
-			~
-			~
-			~
-			~
-			~
-			-->
 
 			</div>
 				
 			<div style="flex-grow: 3">
-				<br><br>
-				<button class ="button red">Exclure</button>
-				<br><br>
-				
-				<form>
-					<input type="text" placeholder ="Renommer" class="input" required>
-					<br><br>
-				</form>
+				<br><br><br>
 				<button class ="button">Renommer</button>
 				<br><br>
-				<p>Rôles :</p>
-				
-				<form method="POST" action="#">
-					<select>
-						<option value="Inscrit">Inscrit</option>
-						<option value="Membre">Membre</option>
-						<option value="Modérateur">Modérateur</option>
-						<option value="Admin">Admin</option>
-						<option value="Webmaster">Webmaster</option>
-					</select>	
-				</form>
+				<button class ="button">Changer le rôle</button>
 				<br><br>
+				<button class ="button" style="background-color:red;">Exclure</button>
+				<br><br><br><br><br>
 			</div>
 				
 		</div>

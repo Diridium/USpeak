@@ -63,11 +63,7 @@ include "../connect.php";
 					 if ($mois < 10) {
 						 $mois = '0'.$mois;
 					 }
-                
-					 if ($jour < 10) {
-						 $jour = '0'.$jour;
-					 }
-					echo '<p style="font-size:25px;">'.$donnees['PSEUDO'].'</p>'.'<p>'.'<u>Rôle :</u> '.$donnees['ROLE'].'</p>'.'<p><u>Enregistré le :</u> '.$jour.'/'.$mois.'/'.$annee.'</p>'; ?>
+					echo '<p style="font-size:25px;">'.$donnees['PSEUDO'].'</p>'.'<p>'.'<u>Role :</u> '.$donnees['ROLE'].'</p>'.'<p><u>Enregistré le :</u> '.$jour.'/'.$mois.'/'.$annee.'</p>'; ?>
 			</div>
     
 		</div>

@@ -41,29 +41,36 @@ include "../connect.php";
 	</header>	
 
 		<!--contenu-->
+		<div class="content">
 			
-		<h4 class="title center">Gerer les channels :</h4>
+			<h4 class="title center">Gerer les channels :</h4>
 			
-		<button class ="buttonsmall" type="submit"><span><a href="index.php">Retour</a></span></button>
-				
+		</div>
+		
+		<div class="content">
+			<button class ="buttonsmall" type="submit"><a href="index.php">Retour</a></button>
+			
+		</div>
+			
 		<div class="flex-container">
 			<div style="flex-grow: 7;display:flex;flex-direction:column;"><br>
 				Liste des channels :<br><br><br><br><br><br><br><br><br><br><br><br><br>
-					<button class="button" style="width:100%"><span><a href="createchannel.php">Ajouter un channel</button></a></span>
+					<button class="button" style="width:1200px"><a href="createchannel.php">Ajouter un channel</button></a>
 			
 			</div>
 				
 			<div style="flex-grow: 3">
 				<br><br>
-				<button class ="button">Renommer le channel</button>
+				<button class ="button" style="width:500px;">Renommer le channel</button>
 				<br><br>
-				<button class ="button">Changer la description</button>
+				<button class ="button" style="width:500px;">Changer la description</button>
 				<br><br>
-				<button class ="button red">Reinitialiser le channel</button>
+				<button class ="button" style="width:500px;">Changer la photo de profil du channel</button>
 				<br><br>
-				<button class ="button red">Supprimer le channel</button>
+				<button class ="button" style="width:500px; background-color:red;">Supprimer le channel</button>
 				<br><br>
 				
+				</form>
 				<br><br>
 			</div>
 				

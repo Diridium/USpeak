@@ -5,7 +5,8 @@ include "../connect.php";
 $idUser = $_SESSION['login'];
 $verifRole = $connect->query("SELECT ROLE FROM user WHERE ID = $idUser");
 $verifRole = $verifRole->fetch();
-if ($verifRole != "Administrateur" || $verifRole != "Modérateur") {
+$verifRole = $verifRole['ROLE'];
+if ($verifRole == "Inscrit" || $verifRole == "Membre") {
 	header("Location: refused.php");
 }
 ?>
@@ -28,7 +29,6 @@ if ($verifRole != "Administrateur" || $verifRole != "Modérateur") {
 			<div class="redtext"><a href="/profil/">
 			<?php echo $_SESSION["pseudo"]; ?>
 		</a></div>
-		
 		</div>
 		<div>
 			<p><a href="/chat/">Chat</a></p>

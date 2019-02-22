@@ -55,7 +55,7 @@ include "../connect.php";
         <input type="text" name="verifName" placeholder="Confirmer votre pseudo" class="input" required><br><br>
 
         <h3>Votre mot de passe :</h3>
-        <input type="password" name="mdp" placeholder="Votre mot de passe" class="input" required><br><br><br><br>
+        <input type="password" name="mdp" placeholder="Votre mot de passe" class="input" required><br><br><br>
 
         <button class ="buttonsmall" type="submit"><span><a href="#">Confirmer</a></span></button>
 

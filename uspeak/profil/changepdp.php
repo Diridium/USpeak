@@ -49,7 +49,7 @@ include "../connect.php";
             <div style="flex-grow: 7">  
                     <br><br>
                         <form action="#">
-                        Choisissez un nouveau theme:<br><br><br><br>
+                        Choisissez une photo de profil:<br><br><br><br>
                         <label for="myFile" class="uploadfile">Choisir un fichier</label>
                         <input id="myFile" style="display:none;" type="file" name="myFile"><br><br><br><br><br><br>
                         <button class ="buttonsmall" type="submit" style="width:650px;"><span><a href="#">Confirmer</a></span></button>
